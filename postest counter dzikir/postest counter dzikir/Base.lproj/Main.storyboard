@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qyj-iQ-2Re">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,32 +19,49 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController3" customModule="postest_counter_dzikir" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-vY-4JB">
-                                <rect key="frame" x="16" y="0.0" width="272" height="226"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-1" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-vY-4JB">
+                                <rect key="frame" x="51" y="75" width="272" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-xA-hfR">
-                                <rect key="frame" x="121" y="427" width="94" height="29"/>
+                                <rect key="frame" x="140" y="504" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="steppervaluechanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FA8-mA-Qw5"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afe-jy-6Sm">
-                                <rect key="frame" x="48" y="254" width="224" height="140"/>
+                                <rect key="frame" x="78" y="331" width="224" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-hK-Oqd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Takbir" id="kqE-Oh-uva">
+                                        <barButtonItem key="rightBarButtonItem" title="Info" id="q1Z-2D-R9V">
+                                            <connections>
+                                                <segue destination="8KX-Df-mnm" kind="modal" id="q2h-Sh-URC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Takbir" id="3me-vV-htn"/>
+                    <tabBarItem key="tabBarItem" title="Takbir" image="megaphone" id="3me-vV-htn"/>
                     <connections>
                         <outlet property="labelnumber" destination="Afe-jy-6Sm" id="huq-ia-tji"/>
                         <outlet property="labelstepper" destination="SMp-xA-hfR" id="G4q-lG-e9a"/>
@@ -59,32 +76,50 @@
             <objects>
                 <viewController id="nW9-kU-wTn" customClass="ViewController2" customModule="postest_counter_dzikir" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="34a-eS-d5h">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aad914ac33a09dbe04c4e067be585e26.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-VO-oZe">
-                                <rect key="frame" x="58" y="20" width="205" height="205"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aad914ac33a09dbe04c4e067be585e26" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-VO-oZe">
+                                <rect key="frame" x="88" y="97" width="205" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="NsM-lZ-WTb">
-                                <rect key="frame" x="113" y="425" width="94" height="29"/>
+                                <rect key="frame" x="140" y="504" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="steppervaluechanged:" destination="nW9-kU-wTn" eventType="valueChanged" id="daM-Pk-hXy"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-aE-I6F">
-                                <rect key="frame" x="68" y="257" width="185" height="140"/>
+                                <rect key="frame" x="98" y="336" width="185" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isY-Fk-sCS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Hamdalah" id="2D3-1s-wC0">
+                                        <barButtonItem key="rightBarButtonItem" title="Info" id="J6c-9t-RdT">
+                                            <connections>
+                                                <segue destination="TcJ-8e-9Rx" kind="modal" id="GZ1-MJ-dH4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="mtl-gq-iYZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hamdalah" id="VNS-d2-huI"/>
+                    <tabBarItem key="tabBarItem" title="Hamdalah" image="handshake" id="VNS-d2-huI"/>
                     <connections>
                         <outlet property="labelnumber" destination="qOm-aE-I6F" id="wBm-Hz-afp"/>
                         <outlet property="labelstepper" destination="NsM-lZ-WTb" id="fVX-n7-z0u"/>
@@ -99,32 +134,51 @@
             <objects>
                 <viewController id="Svb-fp-iI8" customClass="ViewController" customModule="postest_counter_dzikir" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9tN-Ug-DrW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download.png" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-eh-y6M">
-                                <rect key="frame" x="59" y="20" width="203" height="204"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-eh-y6M">
+                                <rect key="frame" x="86" y="96" width="203" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="QoX-aK-OqC">
-                                <rect key="frame" x="113" y="429" width="94" height="29"/>
+                                <rect key="frame" x="140" y="499" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="steppervaluechanged:" destination="Svb-fp-iI8" eventType="valueChanged" id="pUU-hs-0s1"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-id-aod">
-                                <rect key="frame" x="72" y="232" width="176" height="178"/>
+                                <rect key="frame" x="96" y="308" width="176" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCy-Jj-IN6">
+                                <rect key="frame" x="-3" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Tahmid" id="ezh-zS-i0C">
+                                        <barButtonItem key="rightBarButtonItem" title="Info" id="ios-Oy-VYe">
+                                            <connections>
+                                                <segue destination="jog-a0-seT" kind="modal" id="TNH-K7-Xgo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="l5S-64-Oz1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tahmid" id="nZO-mt-m3I"/>
+                    <tabBarItem key="tabBarItem" title="Tahmid" image="muslim-tasbih" id="nZO-mt-m3I"/>
                     <connections>
                         <outlet property="labelnumber" destination="kOX-id-aod" id="FH8-g1-lPQ"/>
                         <outlet property="labelstepper" destination="QoX-aK-OqC" id="4wo-D4-aq6"/>
@@ -132,7 +186,259 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKI-i6-YwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637.5" y="141.5492957746479"/>
+            <point key="canvasLocation" x="636" y="140.77961019490255"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ytP-a6-WEV">
+            <objects>
+                <viewController id="jog-a0-seT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MP7-aQ-vpa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1O-7c-ECt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Info About Tahmid" id="QQx-nZ-PZz">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="f22-0N-BP3">
+                                            <connections>
+                                                <segue destination="qyj-iQ-2Re" kind="modal" id="Mg6-Dk-Uo7"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download.png" translatesAutoresizingMaskIntoConstraints="NO" id="fmj-dA-RND">
+                                <rect key="frame" x="108" y="73" width="158" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Dn-dE-WAm">
+                                <rect key="frame" x="16" y="234" width="343" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Di antara kalimat-kalimat thayyibah (kalimat-kalimat yang baik dan akan mendapatkan pahala di sisi Allah SWT) yang dianjurkan untuk selalu dibaca dan dilantunkan adalah lafal subhanallah. Kalimat subhanallah bermakna Mahasuci Allah. Itu berarti Allah adalah Zat yang harus disucikan dan Dia tidak bergantung pada apa pun. Zat-Nya berdiri sendiri dan tanpa bantuan makhluk lain sama sekali.
+
+Sedangkan secara lughawi atau bahasa, makna dari subhanallah adalah menjauh, dan seseorang yang berenang dilukiskan dengan menjauh. Di dalam Al-Qur`an, anjuran untuk bertasbih kepada Allah SWT sangat banyak, di antaranya adalah sebagai berikut. 
+
+“Langit yang tujuh, bumi dan semua yang ada di dalamnya bertasbih kepada Allah. Tak ada suatu pun melainkan bertasbih dengan memuji-Nya, tetapi kamu sekalian tidak mengerti tasbih mereka. Sesungguhnya Dia adalah Maha Penyantun lagi Maha Pengampun.” (QS Al-Isra` [17]: 44)
+
+Zikir dengan menggunakan lafal subhanallah merupakan salah satu kalimat yang banyak dianjurkan di dalam hadits-hadits Nabi saw. Di dalam beberapa hadits telah disinyalir pula sebagai berikut. 
+
+“Dua kalimat yang ringan diucapkan lidah, berat dalam timbangan, dan disukai oleh (Allah) Yang Maha Pengasih, yaitu kalimat subhanallah wabihamdihi, subhanallahil ‘Azhim (Mahasuci Allah dan segala puji bagi-Nya, Mahasuci Allah Yang Maha Agung).” (HR Bukhari dan Muslim)
+
+“Sesungguhnya sebaik-baik ucapan kepada Allah SWT adalah kalimat subhanallah wa bihamdihi.” (HR Muslim dan Tirmidzi)
+
+Hadits-hadits di atas sudah cukup menunjukkan bobot yang dimiliki dalam kalimat subahanllah. Sebuah kalimat yang mudah untuk diucapkan maupun dihafal. Bahkan, bagi seorang muslim yang buta huruf juga sangat mudah untuk dipelajari. Tidak menutup kemungkinan bahwa Allah ingin mengajarkan kepada hamba-hamba-Nya yang ikhlas beribadah kepada-Nya untuk dapat melakukan ibadah walaupun dengan kalimat yang ringan dan mudah untuk diucapkan. Kalimat subhanallah merupakan kalimat yang penuh manfaat. Kandungan hikmah yang terdapat dalam lafal tersebut jika dibandingkan dengan apa pun tidak akan dapat tertandingi. 
+
+Sebenarnya, hadits-hadits di atas menjelaskan pula kegunaan dan manfaat zikir yang menggunakan kalimat subhanallah. Jika dirunut lebih detil lagi adalah sebagai berikut.
+
+- Memberikan pahala yang besar di sisi Allah SWT, bahkan sebuah kalimat zikir yang paling disukai oleh-Nya. Hal ini sebagaimana diriwayatkan dari Abi Dzar. Rasulullah pernah ditanya, “Perkataan apa yang paling utama?” Beliau menjawab, “Yang dipilih oleh Allah bagi para malaikat dan hamba-hamba-Nya, yaitu subhanallah wabihamdihi (Mahasuci Allah dengan segala puji bagi-Nya).” (HR Muslim)
+- Sebagai sarana untuk menghindarkan gangguan dan kesulitan dari yang tidak disukai. Seperti yang telah ditegaskan di dalam Al-Qur`an. 
+
+“Sabarlah kamu atas apa yang mereka katakan, dan bertasbihlah dengan memuji Tuhanmu sebelum terbit matahari dan sebelum terbenamnya. Bertasbih pulalah pada waktu-waktu di malam hari dan pada waktu-waktu di siang hari, supaya kamu merasa senang.” (QS Thaha [20]: 130)
+
+Adanya pengucapan tasbih yang terus-menerus mengantarkan seseorang kepada ketenangan jiwa dan batin tatkala mendapatkan sesuatu hal yang tidak baik atau buruk. Selain itu, ia semakin meyakini bahwa segala hal yang buruk maupun baik, merupakan kehendak Allah SWT. Dengan demikian, ia merasa telah menggantungkan semuanya kepada Allah SWT.
+
+- Seseorang yang sekali membaca tasbih maka akan memperoleh sepuluh kebaikan. Hal ini diceritakan oleh Mus’ab bin Sa’d bahwa Rasulullah pernah menawarkan amalan yang dapat memberikan seribu kebaikan setiap hari. Pada saat itu, Rasulullah hanya menginsyaratkan untuk membaca tasbih seratus kali, dan memberikan nilai kebaikan seribu kali. Dapat dikatakan bahwa kalimat tasbih tersebut jika dibaca sekali maka akan mendatangkan sepuluh kebaikan. Sungguh luar biasa manfaat yang terdapat dalam kalimat tersebut. Tidak ada manusia yang dapat melakukan seribu kebaikan setiap hari. Nah, dengan hanya berzikir sebanyak seratus kali, hal itu sangat mungkin terjadi.
+
+- Kalimat tasbih dapat menghapuskan segala dosa apabila dibaca seratus kali. Hal ini pernah ditegaskan dalam hadits yang diriwayatkan oleh Abu Hurairah. Rasulullah saw bersabda,
+
+“Barangsiapa mengucapkan subhanallah wabihamdihi seratus kali dalam sehari, ia akan diampuni segala dosanya sekalipun dosanya itu sebanyak buih di laut.” (HR Muslim dan Tirmidzi)
+
+Tentunya yang dimaksud dapat diampuni segala dosanya di sini adalah seseorang yang sudah melakukan tobat nasuha terlebih dahulu sebelum ia melakukan interaksi zikir yang intens. Dengan demikian, orang tersebut tidak akan mengulangi dosa yang pernah ia lakukan. Karena ciri seseorang yang tobat nasuha adalah menyesali segala perbuatan dosanya dan tidak mengulangi, serta semakin rajin untuk mendekatkan diri kepada Allah SWT.
+
+- Sebagai bekal yang paling baik di Akhirat kelak. Seseorang yang telah mampu menghafal dan memaknai kalimat subhanallah, hendaknya selalu membasahi bibir dan menanamkan kalimat tersebut dalam hatinya, baik pada pagi hari, siang, maupun sore dan malam hari. Karena pada hakikatnya, berzikir tidak dibatasi pada satu waktu tertentu. Namun, dalam ayat-ayat Al-Qur`an dan hadits, kalimat tersebut hendaknya dibaca pada pagi dan sore hari. Hal ini memberikan penjelasan kepada kita bahwa pada saat pagi hari merupakan kegiatan awal kali dari seluruh aktivitas. Oleh sebab itu, mengawalinya dengan zikir dan kalimat tasbih merupakan itikad dan sinyal bahwa pada hari itu akan dipenuhi dengan kebaikan.
+
+Sumber : qultum media. Semoga bermanfaat.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HOB-6b-5gG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-Sj-pFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="908.9955022488756"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RML-ev-AJN">
+            <objects>
+                <viewController id="TcJ-8e-9Rx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AWW-EJ-rp1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eve-HQ-vdK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Info About Hamdalah" id="BaL-mQ-iuw">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="m55-FW-9ll">
+                                            <connections>
+                                                <segue destination="qyj-iQ-2Re" kind="modal" id="Ix0-w8-Xkd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-AD-dy3">
+                                <rect key="frame" x="8" y="247" width="359" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">15 Manfaat Ucapan Hamdalah (Alhamdulillah) Dalam Kehidupan Sehari-hari
+Ucapan Alhamdulillah merupakan sebagai ungkapan rasa syukur kita terhadap segala nikmat, rizqi serta berbagai anugerah yang telah kita dapatkan. Allah SWT telah dengan jelas berjanji di dalam Al-qur’an qur’an;
+“Dan jika kalian manusia mau bersyukur atas nikmat yang telah aku berikan kepada kalian maka niscaya aku akan menambah nikmat yang telah aku berikan kepada kalian, dan jika kalian kufur (tidak mau bersyukur) maka ketahuilah niscaya siksa ku itu pedih.” (Q.S Ibrahim: 7)
+
+Maka telah benar-benar jelas dijelaskan didalam Al-qur’an dan Al-qur’an jelas dan tidak diragukan lagi kebenarannya. Membiasakan mengucapkan alhamdulillah sangat baik karena mengucapkan alhamdulillah memberikan banyak manfaat untuk kehidupan kita.
+
+Beberapa manfaat ucapan alhamdulillah yaitu sebagai berikut:
+
+1. Mendapat pahala
+
+Orang yang mau mengucapkan alhamdulillah berati orang tersebut telah memuji Allah maka Allah akan memberikan pahala atas orang tersebut. Jika orang tersebut mengucapkan alhamdulilah lagi yang kedua kali maka Allah akan menambah lagi pahala baru untuk orang tersebut. Jadi sebenarnya kitamencari pahala tidak sulit dengan mengucapkan alhamdulillah saja Allah akan memberi pahala kepada kita tentunya mengucapkan alhamdulillah dengan niat yang baik dan ikhlas.
+
+2. Diampuni dosa
+
+Jika seseorang sampai tiga kali mengucapkan alhamdulillah, maka ucapan ketiganya itu Allah akan menambah pahala baru serta mengampuni dosanya. Betapa Maha Pemurahnya Allah, dengan mengucapkan alhamdulillah saja, Allah mengampuni dosa kita. Kadangkala manusia saja yang sering sombong dan merasa angkuh sehingga enggan untuk bersyukur, padahal sejatinya semua yang dimiliki oleh manusia adalah titipin dari Allah. (baca juga: manfaat shalat tahajjud)
+
+3. Ditambah rizqinya
+
+Seorang hamba yang mau bersyukur kepada Allah maka Allah telah berjanji akan menambah rizqinya. Bersyukur disini juga bisa dilakukan dengan mengucapkan alhamdulillah. Selain mengucapkan alhamdulillah, kita juga bisa bersyukur dengan memberikan sedekah kepada orang yang kurang mampu.
+
+Ketika kita mensedekahkan sebagian harta yang kita miliki kepada orang yang kurang mampu, bukan berati harta kita akan semakin berkurang, tetapi justru akan bertambah. Jika anda tidak percaya maka buktikan saja sendiri. Sebenarnya sebagian harta yang kita miliki juga merupakan bagian atau hak milik para orang yang kurang mampu, maka waji bagi mereka yang mempunyai harta berlimpah untuk mensedekahkannya.
+
+4. Menciptakan feeling good
+
+Ucapan ahhamdulillah dapat menciptakan feeling good bagi orang yang sering mengucapkannya. Karena dengan mengucapkan alhamdulillah hati kita akan qana’ah (menerima dengan lapang dada) apa yang diberikan Allah kepada kita sehingga kita akan berpikiran positif dengan setiap ketentuan yang terjadi dan selalu berpikiran positif dengan takdir Allah.
+
+5. Menentramkan jiwa
+
+Orang yang senantiasa bersyukur dengan mengucap alhamdulillah akan senantiasa merasakan jiwa yang tentram. Jiwa yang tentram sangat mahal harganya karena tidak ada satupun di dunia ini yang menjualnya. Jiwa yang tentram akan tercipta jika hati kita senantiasa bersyukur atas segala nikmat dan pemberian Allah. Sekaya atau sebanyak apapun harta yang dimilik jika tidak bersyukur dengan apa yang dimilikinya maka akan susah untuk mendapatkan jiwa yang tentram. Maka dari itu sering-seringlah untuk bersyukur dengan mengucapkan alhamdulillah. (baca juga: cara agar hati tenang dalam islam)
+
+Sponsors Link
+6. Menjaga kesehatan mental remaja
+
+Remaja merupakan tahap awal pada diri mereka mulai mengenal dunia yang lebih luas dan nyata. Dalam fase ini remaja harus lebih banyak bersyukur karena dengan bersyukur akan menjaga kesehatan mental mereka. Remaja yang banyak bersyukur akan lebih merasa bahagia dibanding dengan remaja yang kurang bersyukur. Mereka yang sering bersyukur akan memiliki pandangan hidup yang lebih baik serta akan memicu tingkah laku yang positif baik dilingkungan keluarga, sekolah atau dalam masyarakat luas.
+
+7. Meningkatkan kesejahteraan
+
+Seseorang yang pandai bersyukur dengan mengucapkan alhamdulillah akan meningkatkan kesejahteraan hidupnya. Bersyukur akan menjadi bengkel untuk memperbaiki penyakit hati sehingga hati kita akan senantiasa adem. Tidak ada hal yang lebih menetramkan kecuali hati kita merasa cukup dengan apa yang kita punyai sehingga kita akan merasa sejahtera dan bahagia.
+
+8. Terhindar dari depresi atau stres
+
+Orang yang kurang bersyukur akan lebih mudah terkena stres atau depresi karena mereka selalu merasa kurang dengan apa yang telah dimiliki. Mereka selalu memandang yang lebih tinggi sehingga susah untuk bersyukur. Dengan membiasakan mengucapkan alhamdulillah maka hati kita akan merasa tenang dan tidak terjadi stres. (baca juga: cara menghilangkan stress dalam islam)
+
+9. Menjadi teman yang lebih bak bagi orang lain
+
+Rasa syukur dengan mengucapkan alhamdulillah akan menimbulkan jiwa sosial yang kuat pada seseorang. Jiwa sosial akan menimbulkan sikap sosial yang positif seperti membantu orang lain yang sedang terkena musibah atau memotivasi orang lain yang sedang mengalami kegagalan dalam masalah hidup.
+
+10. Tidur lebih nyenyak
+
+Sebuah penelitian yang telah dilakukan membuktikan bahwa orang yang bersyukur akan tisur lebih nyenyak karena jiwanya terasa tenang. Jika seseorang yang mengalami insomnia maka bisa jadi orang tersebut kurang bersyukur dengan segala hal yang telah didapatkan.
+
+11. Memperkuat hubungan dengan pasangan
+
+Ketika kita bersyukur dengan pasangan yang telah diberikan Allah kepada kita, maka hal tersebut akan semakin menguatkan rasa cinta antar pasangan. Dengan bersyukur kita tidak akan menuntut pasangan agar menjadi seperti yang kita kehendaki sendiri yang belum tentu baik untuk pasangan kita. Dengan bersyukur maka kita akan menerima pasangan kita dengan segala kekurangannya sehingga akan menimalkan resiko berantem tetapi sebaliknya akan semakin menguatkan hubungan diantara keduanya.
+
+12. Menjaga kesehatan jantung
+
+Sangat dahsyat kehebatan dari manfaat bersykur dengan mengucapkan alhamdulillah karena dapat menjaga kesehatan jantung. Orang yang senantiasa bersyukur akan senantiasa tenang sehingga tidak mengalami gangguan pada jantungnya.
+
+Sponsors Link
+13. Memperkuat moral tim
+
+Syukur kata yang sangat majur untuk memperkuat moral dalam tim. Atlit yang senantiatasa bersyukur dengan mengucapkan alhamdulillah akan lebih sedikit mengalami kelelahan akan hatinya senantiasa merasa senang dan ridho dengan apa yang terjadi dan yang dilakukannya. Kekuatan tersebut akan mampu menggantikan rasa lelah dengan rasa bahagia yang tak terhingga.
+
+14. Sistem kekebalan yang lebih sehat
+
+Rasa syukur akan menciptakan pikiran yang optimis sehingga mendorong sistem kekebalan yang ada ditubuh kita menjadi lebih kuat dan sehat, sehingga kita akan lebih jarang terkena penyakit.
+
+15. Mencegah emosi negatif akibat datangnya musibah
+
+Ketika terkena musibah, seseorang yang senantiasa bersyukur akan selalu memandang positif dan mengambil hikmah dari musibah yang terjadi sehingga tidak menimbulkan emosi yang hanya akan merugikan kita.
+Demikian bebrapa manfaat dari ucapan alhamdulillah. Semoga kita semua termasuk golongan orang-orang yang senantiasa bersyukur dengan nikmat Allah SWT.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aad914ac33a09dbe04c4e067be585e26.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y0m-TD-PHw">
+                                <rect key="frame" x="110" y="84" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Uj3-14-f6f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfz-js-LgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="909"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q62-lm-64U">
+            <objects>
+                <viewController id="8KX-Df-mnm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pX2-M3-e2H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-1" translatesAutoresizingMaskIntoConstraints="NO" id="NTX-vQ-8Dl">
+                                <rect key="frame" x="73" y="64" width="229" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-L0-Obi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Info About Takbir" id="pLU-Y1-E62">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="TQs-m9-gdt">
+                                            <connections>
+                                                <segue destination="qyj-iQ-2Re" kind="modal" id="pVC-o1-OUx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-a9-lRt">
+                                <rect key="frame" x="8" y="251" width="359" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Ada satu sunnah yang mungkin dilupakan sebagian orang yaitu memperbanyak takbir di awal Dzulhijjah.
+
+Dalilnya adalah firman Allah Ta’ala,
+
+وَيَذْكُرُوا اسْمَ اللَّهِ فِي أَيَّامٍ مَعْلُومَاتٍ
+
+“Dan supaya mereka menyebut nama Allah pada hari yang telah ditentukan” (QS. Al Hajj: 28). ‘Ayyam ma’lumaat’ menurut salah satu penafsiran adalah sepuluh hari pertama Dzulhijjah. Pendapat ini adalah pendapat jumhur (mayoritas) ulama di antaranya Ibnu ‘Umar, Ibnu ‘Abbas, Al Hasan Al Bashri, ‘Atho’, Mujahid, ‘Ikrimah, Qotadah dan An Nakho’i, termasuk pula pendapat Abu Hanifah, Imam Asy Syafi’i dan Imam Ahmad (pendapat yang masyhur dari beliau). Lihat perkataan Ibnu Rajab Al Hambali dalam Lathoif Al Ma’arif, hal. 462 dan 471.
+
+Imam Bukhari rahimahullah menyebutkan,
+
+وَقَالَ ابْنُ عَبَّاسٍ وَاذْكُرُوا اللَّهَ فِى أَيَّامٍ مَعْلُومَاتٍ أَيَّامُ الْعَشْرِ ، وَالأَيَّامُ الْمَعْدُودَاتُ أَيَّامُ التَّشْرِيقِ . وَكَانَ ابْنُ عُمَرَ وَأَبُو هُرَيْرَةَ يَخْرُجَانِ إِلَى السُّوقِ فِى أَيَّامِ الْعَشْرِ يُكَبِّرَانِ ، وَيُكَبِّرُ النَّاسُ بِتَكْبِيرِهِمَا . وَكَبَّرَ مُحَمَّدُ بْنُ عَلِىٍّ خَلْفَ النَّافِلَةِ .
+
+Ibnu ‘Abbas berkata, “Berdzikirlah kalian pada Allah di hari-hari yang ditentukan yaitu 10 hari pertama Dzulhijah dan juga pada hari-hari tasyriq.” Ibnu ‘Umar dan Abu Hurairah pernah keluar ke pasar pada sepuluh hari pertama Dzulhijah, lalu mereka bertakbir, lantas manusia pun ikut bertakbir. Muhammad bin ‘Ali pun bertakbir setelah shalat sunnah. (Dikeluarkan oleh Bukhari tanpa sanad (mu’allaq), pada Bab “Keutamaan beramal di hari tasyriq”)
+
+Takbir yang dimaksudkan dalam penjelasan di atas adalah sifatnya muthlaq, artinya tidak dikaitkan pada waktu dan tempat tertentu. Jadi boleh dilakukan di pasar, masjid, dan saat berjalan. Takbir tersebut dilakukan dengan mengeraskan suara khusus bagi laki-laki.
+
+Sedangkan ada juga takbir yang sifatnya muqoyyad, artinya dikaitkan dengan waktu tertentu yaitu dilakukan setelah shalat wajib berjama’ah.
+
+Takbir muqoyyad bagi orang yang tidak berhaji dilakukan mulai dari shalat Shubuh pada hari ‘Arofah (9 Dzulhijah) hingga waktu ‘Ashar pada hari tasyriq yang terakhir. Adapun bagi orang yang berhaji dimulai dari shalat Zhuhur hari Nahr (10 Dzulhijah) hingga hari tasyriq yang terakhir.
+
+Cara bertakbir adalah dengan ucapan: Allahu Akbar, Allahu Akbar, Laa ilaha illallah, Wallahu Akbar, Allahu Akbar, Walillahil Hamd.
+
+Semoga bermanfaat. Hanya Allah yang memberi taufik.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Wlh-8f-2m3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0Y-fk-eHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077.5999999999999" y="850.52473763118451"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tp6-rn-rIb">
@@ -151,12 +457,20 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXe-N9-i8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-313" y="12"/>
+            <point key="canvasLocation" x="-152" y="143"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aad914ac33a09dbe04c4e067be585e26" width="168" height="168"/>
         <image name="aad914ac33a09dbe04c4e067be585e26.jpg" width="168" height="168"/>
-        <image name="download-1.png" width="246" height="205"/>
+        <image name="download" width="224" height="225"/>
+        <image name="download-1" width="246" height="205"/>
         <image name="download.png" width="224" height="225"/>
+        <image name="handshake" width="21" height="30"/>
+        <image name="megaphone" width="32" height="32"/>
+        <image name="muslim-tasbih" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mg6-Dk-Uo7"/>
+    </inferredMetricsTieBreakers>
 </document>
